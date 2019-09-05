@@ -4,14 +4,9 @@ namespace DesignPatterns.ChainOfResponsability.Handlers
 {
     public class AnalistaSituacaoImovelHandler : SimulacaoServiceHandler
     {
-        public AnalistaSituacaoImovelHandler() : base(EtapasSimulacao.ConclusaoSimulacaoValores)
+        public AnalistaSituacaoImovelHandler() : base(EtapasSimulacao.AnaliseSituacaoImovel)
         {
 
-        }
-
-        protected override void ProcessarEtapa()
-        {
-            Console.WriteLine("Conclusão Simulação de Valores.");
         }
     }
 }

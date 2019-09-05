@@ -8,10 +8,5 @@ namespace DesignPatterns.ChainOfResponsability.Handlers
         {
 
         }
-
-        protected override void ProcessarEtapa()
-        {
-            Console.WriteLine("Incluídas as opções de pagamento.");
-        }
     }
 }

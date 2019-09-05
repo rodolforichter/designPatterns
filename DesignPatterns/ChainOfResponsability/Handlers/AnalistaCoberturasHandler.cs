@@ -6,12 +6,7 @@ namespace DesignPatterns.ChainOfResponsability.Handlers
     {
         public AnalistaCoberturasHandler(EtapasSimulacao coberturas) : base(coberturas)
         {
-
-        }
-
-        protected override void ProcessarEtapa()
-        {
-            Console.WriteLine("Análise do especialista de cobertura");
+            
         }
     }
 }

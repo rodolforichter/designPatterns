@@ -2,6 +2,9 @@
 
 namespace DesignPatterns.ChainOfResponsability.Handlers
 {
+    /// <summary>
+    /// Classe abstrata que abstrai o Handler e será herdada pelos demais Handlers.
+    /// </summary>
     public abstract class SimulacaoServiceHandler
     {
         #region Attributes 
@@ -18,16 +21,16 @@ namespace DesignPatterns.ChainOfResponsability.Handlers
 
         #region Methods
 
-        protected abstract void ProcessarEtapa();
-
         public void Processar(Simulacao simulacao)
         {
+            //Verifica se a Etapa foi recrutada para a simulação.
             if (_etapaSimulacao == (simulacao.Etapa & _etapaSimulacao))
             {
-                Console.WriteLine($"{this.GetType().Name} providing {this._etapaSimulacao} etapas.");
+                Console.WriteLine($"{this.GetType().Name} fornecendo {this._etapaSimulacao} etapa.");
 
                 Console.WriteLine();
 
+                //Remove a Etapa que foi processada.
                 simulacao.Etapa &= ~_etapaSimulacao;
             }
 
@@ -41,10 +44,15 @@ namespace DesignPatterns.ChainOfResponsability.Handlers
             }
             else
             {
+                //Chama o próximo Handler
                 _nextHandler.Processar(simulacao);
             }
         }
 
+        /// <summary>
+        /// Define o próximo Handler que será chamado.
+        /// </summary>
+        /// <param name="handler"></param>
         public void SetNextServiceHandler(SimulacaoServiceHandler handler)
         {
             _nextHandler = handler;
