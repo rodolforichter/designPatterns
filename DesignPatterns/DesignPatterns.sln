@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppObserverSimples",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppObserver", "..\ConsoleAppObserver\ConsoleAppObserver.csproj", "{9EA5C5FB-21DE-452A-B903-684A0AE6C499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppStrategy", "..\ConsoleAppStrategy\ConsoleAppStrategy.csproj", "{8509622D-DF2E-4703-8CAD-8A7882E13538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppStrategy", "..\ConsoleAppStrategy\ConsoleAppStrategy.csproj", "{8509622D-DF2E-4703-8CAD-8A7882E13538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "..\SOLID\SOLID.csproj", "{E21BDC35-02AF-474F-8F12-6B12801152E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppOCP", "..\ConsoleAppOCP\ConsoleAppOCP.csproj", "{DE04228E-0B6D-425D-84C8-84EA02B71972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\Shared\Shared.csproj", "{460DD705-36CB-470E-A30F-AD2E34CC45EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +47,26 @@ Global
 		{8509622D-DF2E-4703-8CAD-8A7882E13538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8509622D-DF2E-4703-8CAD-8A7882E13538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8509622D-DF2E-4703-8CAD-8A7882E13538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21BDC35-02AF-474F-8F12-6B12801152E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21BDC35-02AF-474F-8F12-6B12801152E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21BDC35-02AF-474F-8F12-6B12801152E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21BDC35-02AF-474F-8F12-6B12801152E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE04228E-0B6D-425D-84C8-84EA02B71972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE04228E-0B6D-425D-84C8-84EA02B71972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE04228E-0B6D-425D-84C8-84EA02B71972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE04228E-0B6D-425D-84C8-84EA02B71972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460DD705-36CB-470E-A30F-AD2E34CC45EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460DD705-36CB-470E-A30F-AD2E34CC45EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460DD705-36CB-470E-A30F-AD2E34CC45EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460DD705-36CB-470E-A30F-AD2E34CC45EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B66C5C6A-569D-4DEC-9DA1-E06400E3C233} = {C169B66B-57FC-4313-AFC0-3EA59C34D569}
+		{E21BDC35-02AF-474F-8F12-6B12801152E8} = {C169B66B-57FC-4313-AFC0-3EA59C34D569}
+		{460DD705-36CB-470E-A30F-AD2E34CC45EB} = {C169B66B-57FC-4313-AFC0-3EA59C34D569}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E074A02-F601-4AD9-9633-C1D24C533568}
