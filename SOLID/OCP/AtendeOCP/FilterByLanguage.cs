@@ -1,7 +1,9 @@
 ﻿using Shared;
+using SOLID.OCP.AtendeOCP;
+using SOLID.OCP.Models;
 using System;
 
-namespace SOLID.OCP.Filters
+namespace SOLID.OCP.AtendeOCP
 {
     /// <summary>
     /// IMG09

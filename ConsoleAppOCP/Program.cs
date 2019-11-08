@@ -1,11 +1,13 @@
 ﻿using Combinatorics.Collections;
 using SOLID.OCP;
-using SOLID.OCP.Filters;
+using SOLID.OCP.AtendeOCP;
+using SOLID.OCP.AtendeOCP.Interfaces;
+using SOLID.OCP.ExtensionMethods;
+using SOLID.OCP.Models;
 using SOLID.OCP.Specifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SOLID.OCP.ExtensionMethods;
 
 namespace ConsoleAppOCP
 {
@@ -37,8 +39,8 @@ namespace ConsoleAppOCP
 
         private static void OCPWithExtensionMethods()
         {
-            var resultCategory = new FilterBookWithoutOCP().FilterByCategory(BooksToFilter, TypeCategory.Philosophy);
-            var resultLanguage = new FilterBookWithoutOCP().FilterByLanguage(BooksToFilter, TypeLanguage.EN);
+            var resultCategory = new FilterBookWithoutOCP_V1().FilterByCategory(BooksToFilter, TypeCategory.Philosophy);
+            var resultLanguage = new FilterBookWithoutOCP_V1().FilterByLanguage(BooksToFilter, TypeLanguage.EN);
 
             Console.WriteLine(
                 string.Format("Princípio OCP aplicado utilizando Extension Methods, {0} items encontrados para a categoria Filosofy, {1} items encontrados para o idioma EN",
@@ -49,8 +51,8 @@ namespace ConsoleAppOCP
 
         private static void OCPWithInterface()
         {
-            IFilter filterLanguage = new FilterBookByLanguage(TypeLanguage.EN);
-            IFilter filterCategory = new FilterBookByCategory(TypeCategory.Philosophy);
+            IFilter_V1 filterLanguage = new FilterBookByLanguage(TypeLanguage.EN);
+            IFilter_V1 filterCategory = new FilterBookByCategory(TypeCategory.Philosophy);
             var resultLanguage = filterLanguage.Filter(BooksToFilter);
             var resultCategory = filterCategory.Filter(BooksToFilter);
 

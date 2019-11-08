@@ -1,6 +1,5 @@
-﻿using System;
+﻿using SOLID.OCP.Models;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SOLID.OCP.Specifications
 {

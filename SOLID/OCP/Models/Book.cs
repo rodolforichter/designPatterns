@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SOLID.OCP
+namespace SOLID.OCP.Models
 {
     /// <summary>
     /// IMG01

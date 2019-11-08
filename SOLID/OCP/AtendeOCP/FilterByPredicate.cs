@@ -1,8 +1,10 @@
 ﻿using Shared;
+using SOLID.OCP.AtendeOCP;
+using SOLID.OCP.Models;
 using System;
 using System.Collections.Generic;
 
-namespace SOLID.OCP.Filters
+namespace SOLID.OCP.AtendeOCP
 {
     public class FilterByPredicate : FilterBook
     {

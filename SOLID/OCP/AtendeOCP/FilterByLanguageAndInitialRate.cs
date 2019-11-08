@@ -1,9 +1,9 @@
 ﻿using Shared;
+using SOLID.OCP.AtendeOCP;
+using SOLID.OCP.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SOLID.OCP.Filters
+namespace SOLID.OCP.AtendeOCP
 {
     /// <summary>
     /// IMG10

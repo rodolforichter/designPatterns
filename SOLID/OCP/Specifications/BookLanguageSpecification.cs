@@ -1,4 +1,6 @@
-﻿namespace SOLID.OCP.Specifications
+﻿using SOLID.OCP.Models;
+
+namespace SOLID.OCP.Specifications
 {
     public class BookLanguageSpecification : ISpecification<Book>
     {
