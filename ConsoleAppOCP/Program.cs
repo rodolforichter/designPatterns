@@ -20,9 +20,9 @@ namespace ConsoleAppOCP
             InitializeListBooks();
             Sample();
 
-            //var filterCategory = new FilterBook();
+            //var filterCategory = new FilterBook_V1();
             //var resultCategory = filterCategory.Filter(BooksToFilter, b => b.TypeCategory.Equals(TypeCategory.Philosophy));
-            //var filterCategoryLanguage = new FilterBook();
+            //var filterCategoryLanguage = new FilterBook_V1();
             //var resultCategoryLanguage = filterCategoryLanguage.Filter(BooksToFilter, b => b.TypeCategory.Equals(TypeCategory.Philosophy) &&
             //b.TypeLanguage.Equals(TypeLanguage.FR));
         }
